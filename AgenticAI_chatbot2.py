@@ -24,7 +24,7 @@ llm = ChatGoogleGenerativeAI(
 tools = [wikipedia_tool,searchtool]
 agent = initialize_agent(tools=tools,llm = llm, agent="zero-shot-react-description",verbose=True)
 
-query = "Tell me about the History of Agentic AI."
+query = "Tell me about the History of AgenticAI-Projects."
 response = agent.run(query)
 print("Response from Agent: ", response)
 
