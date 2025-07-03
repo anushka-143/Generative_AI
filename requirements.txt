@@ -1,0 +1,13 @@
+langchain
+langchain-google-genai
+pillow
+streamlit
+python-dotenv
+langchain_community
+unstructured
+langchain_chroma
+langchain_openai
+google-search-results
+duckduckgo-search
+wikipedia
+arxiv
