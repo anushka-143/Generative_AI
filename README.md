@@ -1,4 +1,4 @@
-# 📚 Educational AI Agent
+# 📚 Educational AI Agent - README.md
 
 This is a **multi-tool AI assistant** built with **LangChain** and **Streamlit**, designed to provide comprehensive answers to user queries by leveraging:
 - Wikipedia
