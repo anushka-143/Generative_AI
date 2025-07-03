@@ -19,7 +19,7 @@ load_dotenv()
 st.set_page_config(page_title="Educational AI Agent", layout="wide")
 st.title("📚 Educational AI Agent")
 st.markdown("""
-This agent leverages multiple tools (Wikipedia, DuckDuckGo, Arxiv) to provide comprehensive answers to your queries.
+This agent leverages multiple tools (Wikipedia, SerpAPI, SemanticScholar, Arxiv) to provide comprehensive answers to your queries.
 It's designed to help you explore and learn about various topics.
 """)
 
