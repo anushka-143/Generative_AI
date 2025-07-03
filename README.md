@@ -1,20 +1,18 @@
 # 📚 Educational AI Agent - README.md
 
-This is a **multi-tool AI assistant** built with **LangChain** and **Streamlit**, designed to provide comprehensive answers to user queries by leveraging:
-- Wikipedia
-- Arxiv academic papers
-- DuckDuckGo (optionally, can be extended)
-- Google's Gemini (via `ChatGoogleGenerativeAI`)
+An intelligent research assistant built with **LangChain**, **Streamlit**, and **Gemini** to help users explore and learn about any topic through reliable sources like **Wikipedia** and **Arxiv**.
+
+🟢 **[Try it Live](https://educational-researchapp.streamlit.app/)**
 
 ---
 
 ## 🚀 Features
 
-- 🤖 Uses Google Gemini (`gemini-2.5-flash`) for natural language understanding
-- 🔍 Integrates Wikipedia and Arxiv tools for search
-- 🧠 Zero-shot agent with reasoning capabilities
-- 🧾 Shows agent's thought process (verbose reasoning)
-- 🧱 Built with `LangChain`, `Streamlit`, and `dotenv`
+- 🤖 Powered by Google's Gemini (`gemini-2.5-flash`)
+- 📚 Tool support: Wikipedia and Arxiv (LangChain tools)
+- 🧠 Zero-shot agent reasoning using `initialize_agent`
+- 🧾 Verbose output showing the agent's step-by-step reasoning
+- 🎯 Clean, responsive UI using Streamlit
 
 ---
 
