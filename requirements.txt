@@ -10,3 +10,4 @@ langchain_openai
 google-search-results
 duckduckgo-search
 wikipedia
+arxiv
