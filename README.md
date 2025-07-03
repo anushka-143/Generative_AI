@@ -1,22 +1,33 @@
-# 📚 Educational AI Agent - README.md
+# 📚 Educational AI Agent
 
-An intelligent research assistant built with **LangChain**, **Streamlit**, and **Gemini** to help users explore and learn about any topic through reliable sources like **Wikipedia** and **Arxiv**.
+A multi-tool intelligent research assistant built with **LangChain**, **Streamlit**, and **Google Gemini**, capable of answering user queries using reliable sources like Wikipedia, Arxiv, SerpAPI, and Semantic Scholar.
 
-🟢 **[Try it Live](https://educational-researchapp.streamlit.app/)**
+🟢 **[Try it Live →](https://educational-researchapp.streamlit.app/)**
 
 ---
 
 ## 🚀 Features
 
 - 🤖 Powered by Google's Gemini (`gemini-2.5-flash`)
-- 📚 Tool support: Wikipedia and Arxiv (LangChain tools)
-- 🧠 Zero-shot agent reasoning using `initialize_agent`
-- 🧾 Verbose output showing the agent's step-by-step reasoning
-- 🎯 Clean, responsive UI using Streamlit
+- 🔍 Uses LangChain tools for:
+  - Wikipedia search
+  - Arxiv academic papers
+  - Web search via SerpAPI
+  - Scientific literature via Semantic Scholar
+- 🧠 Zero-shot reasoning agent using `initialize_agent`
+- 🧾 Verbose output showing the step-by-step reasoning path
+- ⚡ Fast and interactive UI built with Streamlit
 
 ---
 
-## 🛠️ Setup Instructions
+## 🛠️ Setup Instructions (Local Use)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/anushka-143/Generative_AI.git
+cd Generative_AI
+
 
 ```bash
 git clone https://github.com/anushka-143/Generative_AI.git
