@@ -4,12 +4,13 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.utilities.wikipedia import WikipediaAPIWrapper
 from langchain_community.tools.ddg_search import DuckDuckGoSearchRun
 from langchain_community.tools.arxiv.tool import ArxivQueryRun
+from langchain_community.utilities import SerpAPIWrapper
+from langchain_community.tools.semanticscholar.tool import SemanticScholarQueryRun
 import os
 
-# Load environment variables (ensure GOOGLE_API_KEY is set in your .env file)
+# Load environment variables (ensure GOOGLE_API_KEY and serpAPI is set in your .env file)
 # In a Streamlit deployment, you would set this as a secret.
 # For local testing, create a .env file in the same directory as your script:
-# GOOGLE_API_KEY="your_google_api_key_here"
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -40,6 +41,19 @@ def initialize_langchain_agent():
         description="Use this tool to search academic papers on arXiv. Provide topics, authors, or keywords for research-oriented queries."
     )
 
+    search_tool = Tool(
+        name= "SerpAPI tool",
+        func= SerpAPIWrapper().run,
+        description= "Use this tool to search on web for updated or recent data/information"
+    )
+
+    research_tool = Tool(
+        name = "SemanticScholar tool",
+        func= SemanticScholarQueryRun().run,
+        description= "Use this tool for scientific literature or for more academic context"
+    )
+
+
     # Step 2: Initialize the LLM
     # Ensure GOOGLE_API_KEY is available as an environment variable
     if "GOOGLE_API_KEY" not in os.environ:
@@ -56,7 +70,7 @@ def initialize_langchain_agent():
     )
 
     # Step 3: Combine all the tools into a list
-    tools = [wikipedia_tool, arxiv_tool]
+    tools = [wikipedia_tool, arxiv_tool, search_tool, research_tool]
 
     # Step 4: Initialize the Agent
     agent = initialize_agent(
