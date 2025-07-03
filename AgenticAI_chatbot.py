@@ -13,7 +13,7 @@ searchtool = Tool(
     description="use this tool to perform web searches using DuckDuckGo"
 )
 llm = ChatGoogleGenerativeAI(
-    model = "gemini-1.5-pro",
+    model = "gemini-2.5-flash",
     temperature = 0,
     max_tokens=None,
     timeout = None,
