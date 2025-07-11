@@ -104,3 +104,5 @@ if prompt := st.chat_input("Ask something about science, research, or any academ
                 error_msg = f"❌ Error: {e}"
                 st.error(error_msg)
                 st.session_state.messages.append({"role": "assistant", "content": error_msg})
+
+
